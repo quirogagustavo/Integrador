@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="enlace">
+        <img src="./assets/imagenes/logo2.png" alt="logo" class="logo" />
+      </a>
+
+      <ul>
+        <li><a class="active" href="#">Inicio</a></li>
+        <li><a href="#">Beneficios</a></li>
+        <li><a href="#products">Servicios</a></li>
+        <li><a href="#sec_footer">Contacto</a></li>
+        <li><a href="./login.html" target="_top">Inicio de Sesión</a></li>
+      </ul>
+    </nav>
+    <section id="hero">
+      <div class="hero-info">
+        <h1>Descubre la nueva era del encuentro</h1>
+        <p>
+          NAMIANEM es un emprendimiento turístico y gastronómico ubicado a sólo
+          20 minutos de la ciudad de San Juan. Acompañado por el sonido de los
+          pájaros te proponemos disfrutar de la experiencia de un Día de Campo
+          en el que podrás realizar paseos a caballo y en sulky, visitar nuestra
+          huerta, recorrer los corrales de los animales, compartir con gente del
+          lugar juegos y entretenimientos, conectarte con la naturaleza y probar
+          nuestra exquisita gastronomía.
+        </p>
+      </div>
+      <div class="hero-card">
+        <img src="./assets/imagenes/imagen_hero.jpg" alt="Imagen Naimen" />
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <div class="bene-info">
+        <h2>BENEFICIOS Y ACTIVIDADES</h2>
+        <p>
+          <span>El día de campo comienza a las 10:30hs.</span><br />
+
+          Al llegar los recibiremos con calentitas tortas fritas acompañadas de
+          infusiones calientes, (servicio desde las 10:30hs. a 11:30hs.). Hasta
+          el horario del almuerzo podrán disfrutar del lugar que cuenta con más
+          de 20 hectáreas, visitar nuestra pequeña huerta, el rincón de los
+          animales, realizar paseos a caballo, actividades deportivas y
+          entretenerse con juegos gauchos de otra época. Mientras pasean podrán
+          observar diferentes tipos de animales como gallinas, patos, ovejas,
+          caballos, vacas, variedad de aves, campo sembrado y diferentes
+          especies de árboles, plantas y flores. También podrán refrescarse en
+          el sector de piletas que cuenta con espacios de sombra, vestuarios,
+          baños y barra de tragos y jugos (sólo en temporada)
+          <br />
+          <span>Almuerzo.</span><br />
+          A las 13:15 sonará la campana indicando el horario del almuerzo. Les
+          ofreceremos una entrada con salame, queso, fiambres regionales,
+          cazuelitas con delicias de nuestras cocineras y riquísimas empanadas
+          de carne. Luego podrán probar un verdadero asado hecho a la leña:
+          chorizo, morcilla, pollo, cerdo, asado y vacío acompañado de ensaladas
+          y papas fritas. Una vez concluido el almuerzo podrán deleitarse con
+          nuestros tradicionales postres: flan con crema o dulce de leche, budín
+          de pan con crema o dulce de leche, ensalada de frutas, queso y dulce y
+          postre helado. Bebidas sin alcohol línea Coca Cola incluidas en el
+          almuerzo. Si desean acompañar el asado con vino o cerveza contamos con
+          una variada carta a disposición. Ofrecemos alternativas para personas
+          vegetarianas y celíacas. Dar aviso al momento de realizar la reserva.
+          <br />
+          <span>Por la tarde.</span><br />
+          Además de seguir disfrutando de las actividades que se hicieron por la
+          mañana, podrán realizar paseos en sulky, probar suerte con algunos
+          juegos antiguos de campo tales como la taba, el tejo, la herradura, el
+          sapo y el balero. Practicar actividades deportivas (fútbol, volley,
+          ping pong y metegol). Los más pequeños podrán disfruta de nuestra
+          placita de juegos para niños (trepadores, hamacas, sube y baja)
+          mientras los grandes descansan al sol o a la sombra disfrutando de
+          unos ricos mates. En verano podrán refrescarse en la pileta.
+          <br />
+          <span>Merienda.</span><br />
+          A la hora de la merienda les ofreceremos canastitas preparadas para
+          cada familia con pastelitos, budines caseros y tortas fritas
+          acompañados de diferentes infusiones calientes.
+          <br />
+          <span>Nuestro servicio finaliza a las 18:30hs.</span>
+        </p>
+      </div>
+      <div class="slider">
+        <ul>
+          <li>
+            <img src="./assets/imagenes/caballo.jpg" alt="" height="350" />
+          </li>
+          <li>
+            <img src="./assets/imagenes/juegos.jpg" alt="" height="350" />
+          </li>
+          <li>
+            <img src="./assets/imagenes/jardin.jpg" alt="" height="350" />
+          </li>
+          <li>
+            <img src="./assets/imagenes/huerta.jpg" alt="" height="350" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="products">
+      <h2>Nuestros Platos</h2>
+
+      <div class="products-cotainer">
+        <div class="product">
+          <img
+            src="./assets/imagenes/comidas-tipicas-de-argentina-asado.webp"
+            alt="asado"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Asado</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/imagenes/choripan-con-chimichurri.jpg"
+            alt="asado"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Choripan</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/imagenes/comidas-tipicas-de-argentina-locro.webp"
+            alt="asado"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Asado</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/imagenes/comidas-tipicas-de-argentina-matambre-a-la-pizza.webp"
+            alt="matambre"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Matambre a la Pizza</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/imagenes/comidas-tipicas-de-argentina-provoleta.webp"
+            alt="provoleta"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Provoleta</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/imagenes/cordero-asado.jpg" alt="cordero" />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Cordero</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/imagenes/empanadas-cordobesas.jpg"
+            alt="empanadas"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Empanadas</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/imagenes/tomatican-arg.jpg" alt="tomatican" />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Tomatican</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/imagenes/alfajor-santafesino.jpg" alt="alfajor" />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Alfajor</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/imagenes/comidas-tipicas-de-argentina-chocotorta.webp"
+            alt="chocotorta"
+          />
+          <div class="product-info">
+            <div class="product-top">
+              <h3>Cocotorta</h3>
+            </div>
+            <div class="product-mid">
+              <div class="product-user">
+                <p>Precio</p>
+              </div>
+              <span>4.89 eTH</span>
+            </div>
+
+            <div class="product-bot">
+              <button class="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- Footer main -->
+      <section id="sec_footer" class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contactos</h2>
+          <ul>
+            <li>🗺 Los Sauces s/n, Pocito, San Juan, Argentina</li>
+            <li>☎️ 264 4814 665</li>
+            <li>📫info@namianem.com</li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.1787904992166!2d-68.56974138524942!3d-31.684765816454036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96813d41d2ad0fff%3A0xfc157244c0ba64a2!2sCasa%20color%20gris!5e1!3m2!1sen!2sus!4v1663624583505!5m2!1sen!2sus"
+            width="150"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contactenos</h2>
+          <span class="required_notification">* Datos requeridos</span>
+          <form>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Ingrese su nombre y apellido"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Ingrese su direccion de mail"
+            />
+            <input
+              required
+              type="text"
+              name="Telefono"
+              placeholder="Ingrese su numero de telefono (*)"
+            />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </section>
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </section>
+      <!-- Footer legal -->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li><a href="#">Terminos y Condiciones</a></li>
+          <li><a href="#">Politica de Privacidad</a></li>
+          <li>2022 Derechos Reservados NAMIANEM</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
