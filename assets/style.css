@@ -10,6 +10,7 @@
   
     --text-gray: #adb9c7;
     --text-white: #f3f4f6;
+    --text-black:rgba(0, 0, 0, 0.91);
   
     --fire: #ff6d00;
     --electric: #64d3ff;
@@ -24,10 +25,11 @@
 }
 
 body {
-    font-family: 'arial narrow bold', sans-serif;
+    font-family: "Sofia","Open Sans", sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background: var(--bg-electric);
     }
 
 .container {
@@ -40,25 +42,26 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    padding: 10px 90px;
+    height: 100px;
+    padding: 10px 95px;
     box-sizing: border-box;
     background: rgba(188, 168, 237, 0.615);
     border-bottom: 1px solid #fff;
 }
 
 .enlace{
-    position: absolute;
-    padding: 20px 50px;
+    position:absolute;
+    padding: 0px 100px;
 }
 
 .logo{
-    height: 40px;
+    height: 80px;
+    font-weight: 600;
 }
 
 nav ul{
     float: right;
-    margin-right: 20px;
+    
 }
 
 nav ul li{
@@ -70,13 +73,14 @@ nav ul li{
 nav ul li a{
     color:white;
     font-size: 18px;
+    font-family: "Open Sans";
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 }
 
 li a.active, li a:hover{
-    background: #000090;
+    background: #b42626;
     transition: .5s;
 }
 
@@ -93,20 +97,13 @@ li a.active, li a:hover{
 #check{
     display: none;
 }
-/*
-section{
-    width: 100%;
-    height: 100vh;
-   background-size: cover;
-    background-position: center;
-}
-*/
+
 
 /* Inicio estilos hero */
 #hero{
     margin-top: 60px;
-    margin-left: 50px;
-    padding: 50px 70px;
+    margin-left: 20px;
+    padding: 50px 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,14 +122,15 @@ section{
 .hero-info p {
     font-size: 14px;
     width: 70%;
-    color: var(--text-gray);
+    color: var(--text-black);
+    font-family: "Open Sans";
 }
 
 .hero-info h1{
     font-size: 48px;
     width: 80%;
     min-width: 500px;
-    font-weight: 800;
+    font-weight: bold;
     /*color:var(--text-white)*/
     background: linear-gradient(to top,#30cfd0,#c43ad6);
     -webkit-background-clip:text;
@@ -147,9 +145,35 @@ section{
 
 /*Fin estilos hero */
 
+
+.beneficios{
+    width: 100%;
+    margin: auto 50px;
+    padding: 50px 50px;
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    flex-direction: column;
+}
+/*Inicio estilos beneficios */
+.bene-info h2{
+    font-weight: 800;
+    line-height: 5rem;
+}
+
+.bene-info span{
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+.bene-info p{
+    font-family: "Open Sans";
+    /*width: 80%;*/
+}
+
 /*Inicio estilos slider */
 .slider{
-    width: 150%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
 }
@@ -158,6 +182,7 @@ section{
     display: flex;
     padding: 0;
     width: 400%;
+    position: relative;
     animation: cambio 20s infinite alternate linear;
 }
 
@@ -167,7 +192,7 @@ section{
 }
 
 .slider img{
-    width: 80%;
+    width: 100%;
 }
 
 @keyframes cambio {
@@ -184,25 +209,6 @@ section{
    100% {margin-left: -300%;}
 }
 /*Fin estilos slider */
-.beneficios{
-    width: 100%;
-    margin: auto 50px;
-    padding: 50px 50px;
-    display: flex;
-    gap: 20px;
-}
-/*Inicio estilos beneficios */
-.bene-info h2{
-    font-weight: 800;
-    line-height: 5rem;
-}
-
-.bene-info span{
-    font-weight: 800;
-    line-height: 3rem;
-}
-
-
 
 /*Fin estilos beneficios */
 
@@ -212,8 +218,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
-    max-width: 1200px;
+    padding: 40px 100px;
+    margin: auto 30px;
+    /*max-width: 1200px;*/
     width: 100%;
 }
 
@@ -229,10 +236,9 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     padding: 40px 0;
-    max-width: 1200px;
-}
+   }
 
 .product {
     background: var(--secondary);
@@ -247,8 +253,8 @@ section{
 }
 
 .product img{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
 }
 
 .product-info{
@@ -269,22 +275,27 @@ section{
 .product-top h3 {
     font-size: 16px;
     font-weight: 600;
+    font-family: "Open Sans";
+    color: var(--bg-azul-10);
 }
 
 .product-user p {
     font-size: 16px;
     font-weight: 400;
-    color: var(--text-gray);
+    font-family: "Open Sans";
+    color: var(--bg-azul-10);
 }
 
-.product-user {
+/*.product-user {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+}*/
 
 .product-mid span {
     font-weight: 800;
+    font-family: "Open Sans";
+    color: var(--bg-azul-10);
 }
 
 
@@ -301,7 +312,7 @@ section{
 /*Fin estilos cards */
 
 
-/*Inicio estilos footer */
+/* Footer anterior
 footer {
     background-color: rgba(188, 168, 237, 0.615);;
     color: #bbb;
@@ -409,14 +420,122 @@ input[type="submit"] {
     white-space: nowrap;
     color: black;
     }
-/* one before the last child */
+
 .ft-legal-list li:nth-last-child(2) {
     flex: 1;
-   }
-/*Fin estilos footer */
+   }*/
+/*Inicio estilos footer */
+footer {
+ position: relative;
+  bottom: 20px;
+  width: 100%;
+  background: rgba(188, 168, 237, 0.615);;
+}
+
+.main-content {
+  display: flex;
+  
+}
+
+.main-content .box {
+  flex-basis: 30%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 30px 0 0 0;
+  
+}
+ .mapa .box{
+    margin:30px 0 0 0;
+ }
+
+
+.left .content p{
+    text-align: justify;
+  
+  }
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content {
+  text-align: justify;
+  font-family: "Open Sans";
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+
+.left .content .social a{
+  height: 40px;
+  width: 40px;
+  background: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a:hover {
+  background: #f12020;
+}
+
+.center .content {
+    text-align: justify;
+    font-family: "Open Sans";
+  }
+
+  .right .content {
+    text-align: justify;
+    font-family: "Open Sans";
+  }
+
+   /*Fin estilos footer */
 
 /* Inicio diseño responsivo */
-@media (max-width:952px){
+@media (max-width: 991.98px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color:red;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
     .enlace{
         padding-left: 20px;
     }
@@ -424,8 +543,43 @@ input[type="submit"] {
     nav ul li a{
         font-size: 16px;
     }
+    #hero{
+        flex-direction: column;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .hero-info{
+        width: 90%;
+    }
+    .hero-info p{
+        width: 100%;
+    }
+    .hero-info img{
+        width: 100%;
+    }
+    .beneficios{
+        flex-direction: column;
+    }
+    .bene-info{
+        flex-direction: column;
+    }
+    .slider{
+        width: 100%;
+        max-height: 500px;
+       }
+  
+    .slider img{
+        width: 100%;
+        height: 50%;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    
 }
 
+
+/*
 @media (max-width:858px){
     .checkbtn{
         display: block;
@@ -460,5 +614,11 @@ input[type="submit"] {
     #check:checked ~ ul{
         left: 0;
     }
+
+    .beneficios{
+        flex-direction: column;
+    }
+    
 }
 
+*/
