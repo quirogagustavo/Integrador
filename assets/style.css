@@ -429,7 +429,8 @@ footer {
  position: relative;
   bottom: 20px;
   width: 100%;
-  background: rgba(188, 168, 237, 0.615);;
+  background: rgba(188, 168, 237, 0.615);
+  margin-left: 30px;
 }
 
 .main-content {
